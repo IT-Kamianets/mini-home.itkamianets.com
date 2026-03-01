@@ -26,11 +26,17 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build -- --configuration=production
+        run: npm run build
+
+      - name: Create 404.html for SPA
+        run: cp dist/mini-home-hote/browser/index.html dist/mini-home-hote/browser/404.html
+
+      - name: Copy CNAME to dist
+        run: cp src/CNAME dist/mini-home-hote/browser/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/mini-home-hote/browser
           branch: gh-pages
-          cname: mini-home.itkamianets.com
+          clean: true

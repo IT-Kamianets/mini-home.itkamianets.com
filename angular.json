@@ -17,9 +17,11 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/mini-home-hote",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/CNAME",
               {
                 "glob": "**/*",
                 "input": "public"
