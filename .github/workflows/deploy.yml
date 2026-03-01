@@ -3,21 +3,18 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master # Якщо основна гілка називається 'main', змініть тут
+      - master
 
-# Обов'язкові права для нативного деплою через GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Забороняє паралельний деплой, щоб уникнути конфліктів
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Робота 1: Збірка проєкту
   build:
     runs-on: ubuntu-latest
     steps:
@@ -36,9 +33,12 @@ jobs:
       - name: Build project
         run: npm run build -- --configuration=production
 
-      # Створюємо файл CNAME для вашого кастомного домену
-      - name: Create CNAME file
-        run: echo "mini-home.itkamianets.com" > dist/mini-home-hote/browser/CNAME
+      - name: Prepare for GH Pages
+        run: |
+          # Створюємо 404.html для SPA роутингу
+          cp dist/mini-home-hote/browser/index.html dist/mini-home-hote/browser/404.html
+          # Створюємо CNAME
+          echo "mini-home.itkamianets.com" > dist/mini-home-hote/browser/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,16 +46,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Шлях до папки з готовим білдом
           path: 'dist/mini-home-hote/browser'
 
-  # Робота 2: Розгортання
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build # Чекаємо, поки завершиться build
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
