@@ -1,0 +1,34 @@
+<footer class="footer">
+  <div class="container footer-content">
+    
+    <div class="footer-info">
+      <h3>Mini <span>Home</span> Hotel</h3>
+      <p><i class="bi bi-geo-alt"></i> {{ labels['address'][currentLang()] }}</p>
+      <p><i class="bi bi-telephone"></i> <a href="tel:+380970010332" class="phone-link">+380 (97) 001 03 32</a></p>
+      
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://t.me/" target="_blank" title="Telegram"><i class="bi bi-telegram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+    
+    <div id="footer-map" class="footer-map">
+      <!-- Reliable Search-based Google Maps Embed -->
+      <iframe 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        src="https://maps.google.com/maps?q=Mini%20Home%20Hotel,%20Kamianets-Podilskyi&t=&z=16&ie=UTF8&iwloc=B&output=embed">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Mini Home Hotel. {{ labels['rights'][currentLang()] }}</p>
+    <p class="designer">Designed by Victor</p>
+  </div>
+</footer>
