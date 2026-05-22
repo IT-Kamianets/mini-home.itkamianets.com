@@ -175,6 +175,8 @@
   }
 
   .footer-info p {
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
   }
 }
