@@ -161,7 +161,7 @@
   .footer-content {
     flex-direction: column;
   }
-  
+
   .footer-map {
     width: 100%;
   }
@@ -172,5 +172,9 @@
 
   .footer-info p, .social-links {
     justify-content: center;
+  }
+
+  .footer-info p {
+    align-items: flex-start;
   }
 }
