@@ -62,6 +62,7 @@
 
 .info-details a {
   color: var(--text-muted);
+  text-decoration: none;
 }
 
 .info-details a:hover {

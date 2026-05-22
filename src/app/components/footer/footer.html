@@ -3,16 +3,21 @@
     
     <div class="footer-info">
       <h3>Mini <span>Home</span> Hotel</h3>
-      <p><i class="bi bi-geo-alt"></i> {{ labels['address'][currentLang()] }}</p>
+      <p><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/oDL85NdUH1HdnWdk9" target="_blank" class="phone-link">{{ labels['address'][currentLang()] }}</a></p>
       <p><i class="bi bi-telephone"></i> <a href="tel:+380970010332" class="phone-link">+380 (97) 001 03 32</a></p>
       
-      <div class="social-links">
-        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://t.me/" target="_blank" title="Telegram"><i class="bi bi-telegram"></i></a>
-        <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
-      </div>
     </div>
     
+    <div class="footer-nav">
+      <h4>{{ labels['nav'][currentLang()] }}</h4>
+      <ul>
+        <li><a routerLink="/">{{ labels['home'][currentLang()] }}</a></li>
+        <li><a routerLink="/rooms">{{ labels['rooms'][currentLang()] }}</a></li>
+        <li><a routerLink="/gallery">{{ labels['gallery'][currentLang()] }}</a></li>
+        <li><a routerLink="/contact">{{ labels['contact'][currentLang()] }}</a></li>
+      </ul>
+    </div>
+
     <div id="footer-map" class="footer-map">
       <!-- Reliable Search-based Google Maps Embed -->
       <iframe 

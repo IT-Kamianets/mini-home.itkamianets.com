@@ -27,8 +27,8 @@ jobs:
             - name: Build Angular app
               run: npm run build
 
-            - name: Copy CNAME file
-              run: cp CNAME dist/mini-home-hote/browser/
+            - name: Copy index.html to 404.html for SPA routing
+              run: cp dist/mini-home-hote/browser/index.html dist/mini-home-hote/browser/404.html
 
             - name: Set up SSH
               env:

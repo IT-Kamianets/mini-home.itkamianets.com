@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /i \"scripts\\\\|start\\\\|build\\\\|deploy\")",
+      "Bash(cp \"c:\\\\Users\\\\Kristina\\\\work\\\\mini-home.itkamianets.com\\\\CNAME\" \"c:\\\\Users\\\\Kristina\\\\work\\\\mini-home.itkamianets.com\\\\src\\\\CNAME\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Kristina\\work\\mini-home.itkamianets.com"
+    ]
+  }
+}

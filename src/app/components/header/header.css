@@ -65,11 +65,16 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-main);
-  background: transparent;
+  background: var(--surface);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+}
+
+.lang-switcher option {
+  color: #111;
+  background: #fff;
 }
 
 .theme-toggle {

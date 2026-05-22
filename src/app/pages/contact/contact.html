@@ -12,11 +12,7 @@
           <div class="icon-box"><i class="bi bi-geo-alt-fill"></i></div>
           <div class="info-details">
             <h3>{{ labels['address_label'][currentLang()] }}</h3>
-            <p>{{ labels['address_value'][currentLang()] }}</p>
-            <!-- Button to scroll to map as requested -->
-            <button (click)="scrollToMap()" class="btn-link mt-2">
-              <i class="bi bi-map"></i> {{ labels['open_map'][currentLang()] }}
-            </button>
+            <p><a href="https://maps.app.goo.gl/YrhCmCxcHVxXrbWLA" target="_blank" class="address-link">{{ labels['address_value'][currentLang()] }}</a></p>
           </div>
         </div>
 
