@@ -27,7 +27,7 @@ export class HomeComponent {
       pl: 'Twój idealny wypoczynek zaczyna się tutaj. Nowoczesne pokoje i szczera gościnność.',
       de: 'Ihr idealer Urlaub beginnt hier. Moderne Zimmer und herzliche Gastfreundschaft.'
     },
-    cta_book: { uk: 'Забронювати зараз', en: 'Book Now', pl: 'Zarezerwuj teraz', de: 'Jetzt buchen' },
+    cta_book: { uk: 'Бронювати', en: 'Book Now', pl: 'Zarezerwuj teraz', de: 'Jetzt buchen' },
     cta_rooms: { uk: 'Наші номери', en: 'Our Rooms', pl: 'Nasze pokoje', de: 'Unsere Zimmer' },
     cta_gallery: { uk: 'Дивитись фото', en: 'View Photos', pl: 'Zobacz zdjęcia', de: 'Fotos ansehen' },
     

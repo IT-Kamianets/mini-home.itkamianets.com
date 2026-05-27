@@ -33,7 +33,7 @@ export class RoomsComponent {
   labels: { [key: string]: { [key: string]: string } } = {
     title: { uk: 'Наші номери', en: 'Our Rooms', pl: 'Nasze pokoje', de: 'Unsere Zimmer' },
     subtitle: { uk: 'Оберіть ідеальний варіант для вашого відпочинку.', en: 'Choose the perfect option for your stay.', pl: 'Wybierz idealną opcję na swój pobyt.', de: 'Wählen Sie die perfekte Option für Ihren Aufenthalt.' },
-    book_now: { uk: 'Забронювати', en: 'Book Now', pl: 'Zarezerwuj зараз', de: 'Jetzt buchen' },
+    book_now: { uk: 'Бронювати', en: 'Book Now', pl: 'Zarezerwuj teraz', de: 'Jetzt buchen' },
     amenities: { uk: 'Зручності', en: 'Amenities', pl: 'Udogodnienia', de: 'Ausstattung' },
     capacity: { uk: 'Осіб', en: 'Capacity', pl: 'Osoby', de: 'Kapazität' },
     currency: { uk: 'грн/ніч', en: 'UAH/night', pl: 'UAH/noc', de: 'UAH/Nacht' },
